@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LV2</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .out {
+            width: 300px;
+            transition: all 500ms linear;
+        }
+
+        .out:hover {
+            border-radius: 10px;
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, .2);
+            font-size-adjust: 16px;
+
+        }
+
+        .in1 {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            margin: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .in1 img {
+            width: 300px;
+            height: 300px;
+            transition: all 500ms linear;
+        }
+
+        .in1 img:hover {
+            transform: scale(1.2);
+            box-shadow: 10px;
+
+        }
+
+
+        .in2 {
+            display: inline-block;
+            width: 290px;
+            padding-left: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border: 1px solid rgba(70, 68, 68, 0.2);
+            border-top: -20px;
+        }
+
+        .in2 p {
+            font-size: 16px;
+        }
+
+        .in2 .p2 {
+            text-indent: 2em;
+        }
+
+        .button {
+            display: flex;
+            margin: 30px 0;
+
+        }
+
+        .button input {
+            background-color: lightblue;
+            height: 50px;
+            width: 150px;
+            margin-left: 25%;
+            border-radius: 20px;
+            border: 1px solid white;
+            font-size: 18px;
+            text-align: center;
+            color: white;
+            transition: all 1000ms linear;
+        }
+        .button input:hover{
+            background-color: blue;
+            transition: all 2000ms linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="out">
+        <div class="in1">
+            <img src="images/background.JPG">
+        </div>
+        <div class="in2">
+            <h2>前端研发部</h2>
+            <p>将想法画进现实,让数据激发可能</p>
+            <div class="p2">
+                <p>前端的学长帅，学姐美！</p>
+                <p>前端的学长帅，学姐美！</p>
+                <p>前端的学长帅，学姐美！</p>
+                <p>前端的学长帅，学姐美！</p>
+            </div>
+            <div class="button">
+                <input type="button" value="加入我们">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
